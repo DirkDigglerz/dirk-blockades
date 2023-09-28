@@ -15,12 +15,13 @@ CreateThread(function()
             
             },function(callback, data)
             if callback == "spawn" then 
+              SetEntityHeading(data.entity, v.Pos.w)
               FreezeEntityPosition(data.entity, true)
               SetEntityInvincible(data.entity, true)
               SetBlockingOfNonTemporaryEvents(data.entity, true)
               SetPedCanBeTargetted(data.entity, false)
             elseif callback == "despawn" then
-              
+          
             end  
           end)
         end

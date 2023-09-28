@@ -9,14 +9,12 @@ version '1.0.0'
 client_script {
   'config.lua',
   'src/client/init.lua',
-  'src/client/functions.lua',
 }
 
 
 server_script {
   'config.lua',
   'src/server/init.lua',
-  'src/server/functions.lua',
 }
 
 dependencies{
